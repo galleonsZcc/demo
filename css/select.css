@@ -1,0 +1,53 @@
+.ui-select{
+	display: inline-block;
+}
+.ui-select.ui-select-nobor{
+	display: inline-block;
+	position: relative;
+}
+.ui-select-nobor .ui-select-trigger{
+	padding: 0px 10px;
+	height: 30px;
+	border: none;
+	line-height: 30px;
+}
+.ui-select-nobor.current .ui-select-trigger{
+	height:29px;
+	border-top:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	box-shadow: 0 1px 6px -1px #ccc;
+	z-index: 10;
+}
+.ui-select-nobor .ui-select-trigger a{
+	color: #666;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.ui-select-nobor .ui-select-trigger i {
+	text-indent: 0;
+	font-size: 16px;
+	cursor: pointer;
+}
+.ui-select-nobor .ui-select-options{
+	position: absolute;
+	top:0;
+	left: 0;
+	border: 1px solid #ccc;
+	box-shadow: 0 1px 6px -1px #ccc;
+	background-color:#fff; 
+	z-index: 9;
+}
+.ui-select-nobor .ui-select-options li{
+	display: block;;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	cursor: default;
+}
+.ui-select-nobor .ui-select-options li:hover{
+	background-color: #f2f2f2;
+}
+
+

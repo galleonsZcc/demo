@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>demo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/upBtnBox.css" />
+<link rel="stylesheet" type="text/css" href="css/tips.css" />
+<link rel="stylesheet" type="text/css" href="css/table.css" />
+<link rel="stylesheet" type="text/css" href="css/select.css" />
+<link rel="stylesheet" type="text/css" href="https://s.tbcdn.cn/g/alinw/kuma-table/1.0.1/kuma-table.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/msgPop.js"></script>
+<script type="text/javascript" src="js/numeral.js"></script>
+</head>
+<body>
+	<!--input[text]-->
+	<input type="text" class="ui-input-text" placeholder="请输入内容" />
+	<input type="text" class="ui-input-text" disabled="disabled" placeholder="未输入内容，不可用" />
+	<input type="text" class="ui-input-text" placeholder="请输入内容" disabled="disabled" value="已输入内容，不可用" />
+	<input type="text" class="ui-input-text" data-decimal="2" id="tnumeral" placeholder="numeral" />
+	<br/><br/>
+	<!--textarea-->
+	<textarea style="height:70px;width:300px;" placeholder="1000字以内" ></textarea>
+	<textarea style="height:70px;width:300px;" disabled="disabled" placeholder="未输入内容，不可用" ></textarea>
+	<textarea style="height:70px;width:300px;" disabled="disabled" placeholder="1000字以内" >已输入内容，不可用</textarea><br/><br/>
+
+	<!--input-->
+	<input type="text" class="ui-input-select" readonly="readonly" />
+	<span class="dropListDown" style="z-index: 1;">
+   		<input class="ui-input-select W180 hand " type="text" readonly="readonly" value="请选择" />
+   			<div class="dropDownConBox" style="left: 0px; width: 99%; top: 29px;display:none">
+     		    	<a href="javascript:;" rel="">请选择</a>
+     		    	<a href="javascript:;" rel="1">年检</a>
+     		    	<a href="javascript:;" rel="2">注销</a>
+     		    	<a href="javascript:;" rel="3">企业迁移登记</a>
+     		    	<a href="javascript:;" rel="4">申请增加营业执照副本</a>
+     		    	<a href="javascript:;" rel="5">营业执照遗失补领/换发申请</a>
+     		 </div>
+	</span>
+
+	<div class="ui-select ui-select-nobor">
+		<div class="ui-select-trigger" style="">
+			<a href="javascript:;">
+				<span data-role="trigger-content">请选择</span>
+				<i class="iconfont">&#xe614</i>
+			</a>
+		</div>
+		<div class="ui-select-options" style="display:none">
+			<ul>
+				<li>选项一</li>
+				<li>选项二二二</li>
+				<li>这是选项三三三三</li>
+			</ul>
+		</div>
+	</div>
+	
+	<br/><br/>
+	<input type="text" class="ui-input-showPop" readonly="readonly"/>
+	<input type="text" class="ui-input-search" /><br/><br/>
+	<!--radio-->
+	<input type="radio" class="middle" value="true" name="radio_check" id="radio_check_true" />
+	<label for="radio_check_true" class="middle">是</label>
+	<input type="radio" class="middle" value="false" name="radio_check" id="radio_check_false" />
+	<label for="radio_check_false" class="middle">否</label>
+	<input type="radio" class="middle" value="true" name="radio_check_dis" disabled="disabled" id="radio_check_true_dis" />
+	<label for="radio_check_true_dis" class="middle">是</label>
+	<input type="radio" class="middle" value="false" name="radio_check_dis" checked="checked" disabled="disabled" id="radio_check_false_dis" />
+	<label for="radio_check_false_dis" class="middle">否</label>
+	<br/><br/>
+	<!--checkbox-->
+	<input type="checkbox" class="middle" value="1" name="checkbox_check" id="checkbox_check1" />
+	<label for="checkbox_check1" class="middle">种类一</label>
+	<input type="checkbox" class="middle" value="3" disabled="disabled" name="checkbox_check"  id="checkbox_check2" />
+	<label for="checkbox_check2" class="middle">种类二</label>
+	<input type="checkbox" class="middle" value="4" checked="checked" disabled="disabled" name="checkbox_check"  id="checkbox_check3" />
+	<label for="checkbox_check3" class="middle">种类三</label>
+	<br/><br/>
+	<h1>按钮用橙色，不要用蓝色</h1>
+	<!--button-->
+	一级按钮
+	<input type="button" class="bogda_btn_orange_b1" value="提&nbsp;&nbsp;交"/> 
+	<input type="button" class="bogda_btn_blue_b1" value="提&nbsp;&nbsp;交"/>
+	<input type="button" class="bogda_btn_white_b1" value="提&nbsp;&nbsp;交"/> 
+	<input type="button" class="bogda_btn_white_b1" disabled="disabled" value="提&nbsp;&nbsp;交"/> <br/><br/>
+	组件按钮
+	<input type="button" class="bogda_btn_orange_s1" value="提交"/> 
+	<input type="button" class="bogda_btn_blue_s1" value="提交"/> 
+	<input type="button" class="bogda_btn_white_s1" value="提交"/>
+	<input type="button" class="bogda_btn_white_s1" disabled="disabled" value="提交"/> <br/><br/>
+	小按钮
+	<input type="button" class="bogda_btn_orange_s2" value="提交"/> 
+	<input type="button" class="bogda_btn_orange_s2" disabled="disabled" value="提交"/>
+	<input type="button" class="bogda_btn_white_s2" value="提交"/>
+	<input type="button" class="bogda_btn_white_s2" disabled="disabled" value="提交"/><br/><br/>
+	<!--upload button-->
+	<div class="upBtnBox clearfix" style="width:620px;" savetype="file1">
+		<ul class="disline clearfix fl middle calculate" savetype="file1" id="" style="display:none;">
+		</ul>  
+		<span class="upFileBtn_Box2 fl">   
+			<input id="" name="" uploadrowtype="" type="button" value="上传附件" class="fileInputButton upBtn" savetype="file1" />
+			<div class="uploadPosBox2">
+				<input name="fileInput" id="file1" type="file" class="fileInput commonFileUpload fileUploadBox" savetype="file1" />
+			</div> 
+		</span> 
+	    <input type="hidden" name="fileMaxSize" value="" savetype="file1" />
+	    <input type="hidden" name="format" value="/dot|txt|jpg|png|bmp|msg|pdf|doc|docx|rar|zip|xls|xlsx|dot/" savetype="file1" /> 
+	    <input type="hidden" name="maxPicCount" value="10" savetype="file1" /> 
+	</div>
+	<br/>
+	点我测试弹出对话框
+	<input type="button" class="bogda_btn_orange_b1" id="showpop1" value="成功一"/> 
+	<input type="button" class="bogda_btn_orange_b1" id="showpop2" value="成功二"/> 
+	<input type="button" class="bogda_btn_orange_b1" id="showpop3" value="错误一"/> 
+	<input type="button" class="bogda_btn_orange_b1" id="showpop4" value="错误二"/> 
+	<input type="button" class="bogda_btn_orange_b1" id="showpop5" value="警告一"/> 
+	<br/>
+	<!--tips-->
+	<div class="ui-poptip" style="z-index: 99; display: block; left: 1000px; top: 50px;">
+	    <div class="ui-poptip-shadow">
+		    <div class="ui-poptip-container">
+		        <div class="ui-poptip-arrow">
+		            <em></em>
+		            <span></span>
+		        </div>
+		        <div class="ui-poptip-content">
+		        	<div class="content" style="max-width:200px;">
+		        		我是内容是我是内容是我是内容是我是内容是我是内容是我是内容是我是内容是我是内容是我是内容是我是内容是我是	内容是我是内容是我是内容是我是内容是我是内容是我是内容是我是内容是我是内容是我是内容是我是内容是
+		        	</div>
+		    	</div>
+		    </div>
+	    </div>
+	</div>
+	<!--table-->
+	<table class="ui-table ">
+		<thead>
+			<tr>
+				<th width="100px">标题1</th>
+				<th>标题2</th>
+				<th>标题3</th>
+				<th>标题4</th>
+				<th>标题5</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td style="width:100px;">内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1</td>
+				<td>内容2</td>
+				<td>内容3</td>
+				<td>内容4</td>
+				<td>内容5</td>
+			</tr>
+			<tr>
+				<td>内容1</td>
+				<td>内容2</td>
+				<td>内容3</td>
+				<td>内容4</td>
+				<td>内容5</td>
+			</tr>
+			<tr>
+				<td>内容1</td>
+				<td>内容2</td>
+				<td>内容3</td>
+				<td>内容4</td>
+				<td>内容5</td>
+			</tr>
+			<tr>
+				<td>内容1</td>
+				<td>内容2</td>
+				<td>内容3</td>
+				<td>内容4</td>
+				<td>内容5</td>
+			</tr>
+			<tr>
+				<td>内容1</td>
+				<td>内容2</td>
+				<td>内容3</td>
+				<td>内容4</td>
+				<td>内容5</td>
+			</tr>
+			<tr>
+				<td>内容1</td>
+				<td>内容2</td>
+				<td>内容3</td>
+				<td>内容4</td>
+				<td>内容5</td>
+			</tr>
+		</tbody>
+	</table>
+	<i class="iconfont" style="font-size:16px;font-weight:bold" title="向左">&#xe644;</i>
+	<i class="iconfont" style="font-size:16px;font-weight:bold" title="向右">&#xe643;</i>
+	<i class="iconfont" style="font-size:16px;font-weight:bold" title="第一页">&#xe64a;</i>
+	<i class="iconfont" style="font-size:16px;font-weight:bold" title="最后一页">&#xe64b;</i>
+</div>
+<div style="height:180px;border:1px solid #ccc;line-height:180px;">
+		<a href="" style="display:block;height:30px;width:50px;">1231233</a>
+		<ul>
+			<li style="display:block;height:30px;width:50px;">122</li>
+			<li style="display:block;height:30px;width:50px;">22</li>
+			<li style="display:block;height:30px;width:50px;">11</li>
+		</ul>
+</div>
+</body>
+</html>

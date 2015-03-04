@@ -1,0 +1,5 @@
+.upBtnBox .upBtn,.upFileBtn_Box2 .upBtn{border:1px dashed #bcbcbc;padding:2px 3px 2px 15px;background:url(images/bg_007.gif) no-repeat 3px center;cursor:pointer;height:22px;_line-height:18px;width:75px;}
+.uploadPosBox,.uploadPosBox2{display:none;position:absolute;overflow:hidden;margin:0px;padding:0px;opacity:0;filter:alpha(opacity=0);direction:ltr;z-index:2147483583;width:75px;height:26px;visibility:hidden;}.uploadPosBox .fileUploadBox,.uploadPosBox2 .fileUploadBox{position:absolute;right:0px;margin:0px;padding:0px;font-size:480px;cursor: pointer;}
+.upFileBtn_Box2{display:inline-block;position:relative;}
+.uploadPosBox2{left:0;top:0;}
+.upFileBtn_Box2:hover .uploadPosBox2,.uploadPosBox2:hover{display:block;visibility:visible;}

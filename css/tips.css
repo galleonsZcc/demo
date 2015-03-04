@@ -1,0 +1,128 @@
+.ui-poptip {
+	position: absolute;
+	z-index: 101;
+	font-size: 12px;
+	line-height: 1.5;
+	zoom: 1;
+	top: 0;
+	left: 0;
+}
+
+.ui-poptip-shadow {
+	background-color: rgba(0,0,0,.05);
+	border-radius: 2px;
+	padding: 2px;
+	zoom: 1;
+}
+.ui-poptip:after,.ui-poptip-shadow:after,.ui-poptip-container:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.ui-poptip-container {
+	position: relative;
+	background-color: #fff;
+	border: 1px solid #b1b1b1;
+	border-radius: 2px;
+	padding: 5px 15px;
+	zoom: 1;
+}
+.ui-msgpop .ui-poptip-container{
+	padding: 20px;
+}
+
+.ui-poptip-arrow {
+	position: absolute;
+	z-index: 10;
+	left: 14px;
+	top: -6px;
+}
+
+.ui-poptip .ui-poptip-arrow em {
+	border-bottom-color: #b1b1b1;
+	border-width: 0 6px 6px;
+	top: -1px;
+	left: 0;
+}
+.ui-poptip-arrow em, .ui-poptip-arrow span {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	overflow: hidden;
+}
+
+.ui-poptip .ui-poptip-arrow span{
+	border-width: 0 6px 6px;
+	border-bottom-color: #fff;
+	top: 0;
+	left: 0;
+}
+.ui-msgpop .ui-poptip-content,.ui-msgpop .ui-poptip-content .ui-msgpop-icon,.ui-msgpop .ui-poptip-content .content{
+	float: left;
+}
+.ui-msgpop .ui-poptip-content:after{
+	clear: both;;
+	zoom: 1;
+	overflow: hidden;
+}
+.ui-poptip-close{
+	margin-top: -5px;
+	height:10px;
+	margin-bottom: 3px;
+}
+
+.ui-msgpop .ui-poptip-content .content{
+	margin-left: 10px;
+}
+.ui-msgpop .ui-poptip-content .ui-msgpop-icon{
+	height:25px;
+	width:25px;
+}
+.ui-msgpop .ui-poptip-container .ui-poptip-close .ui-close{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: url(images/ui_pop_close.png) no-repeat center center;
+}
+.ui-msgpop .ui-poptip-container .ui-msgpop-content-title{
+	font-size: 14px;
+	font-weight: bold;
+	min-width: 100px;
+}
+.ui-msgpop .ui-poptip-container .ui-msgpop-content-msg{
+	margin-top: 5px;
+	max-width: 300px;
+}
+.ui-msgpop .ui-poptip-container .ui-msgpop-content-btn{
+	margin-top: 15px;
+}
+.ui-msgpop-content-btn input[type="button"]{
+	display: inline-block;
+}
+.ui-msgpop .ui-msgpop-countdown{
+	display: inline-block;
+	color: #999;
+}
+.ui-msgpop .ui-msgpop-countdown .countdown-number{
+	color: #ff6600;
+}
+.ui-msgpop .ui-msgpop-icon{
+	background: url(images/icon_group.png) no-repeat;
+}
+.ui-msgpop-icon.icon-succ{
+	background-position: -156px -273px;
+}
+.ui-msgpop-icon.icon-ask{
+	background-position: -156px -79px;
+}
+.ui-msgpop-icon.icon-warning{
+	background-position: -156px -19px;
+}
+.ui-msgpop-icon.icon-error{
+	background-position: -156px -142px;
+}

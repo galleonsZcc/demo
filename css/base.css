@@ -1,0 +1,31 @@
+*body.clearfix {
+	zoom: 1;
+	*zoom:1;
+}
+body,input,textarea {
+	font: 12px/1.5 \5b8b\4f53, Arial, sans-serif;
+	color: #5d5d5d;
+}
+
+.mt3{
+	margin-top:3px;
+}
+.ml3{
+	margin-left: 3px;
+}
+.middle{
+	vertical-align: middle;
+}
+.ml10{
+	margin-left: 10px;
+}
+.ml5{
+	margin-left: 5px;
+}
+ol, ul {
+ list-style: none; 
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	margin: 0;
+	padding: 0;
+}
